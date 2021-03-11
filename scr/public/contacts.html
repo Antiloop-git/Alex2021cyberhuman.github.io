@@ -5,28 +5,48 @@
     <title>
         [Contacts]
     </title>
-    <meta http-equiv="content-type"
-          content="text/html;charset=UTF-8" />
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6800075e-e848-4ae7-9f8f-de62880360a0" type="text/javascript"></script>
-    <script scr="../scr/mapsyandex.js" type="text/javascript"></script>
+    <meta
+        http-equiv="content-type"
+        content="text/html;charset=UTF-8"/>
+    <script
+        src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6800075e-e848-4ae7-9f8f-de62880360a0"
+        type="text/javascript"></script>
+    <script
+        type="text/javascript">
+        var map;
+        ymaps.ready(init);
+
+        function init() {
+
+            map = new ymaps.Map("map",
+                {
+                    center: [55.76, 37.64],
+                    zoom: 10
+                },
+                {
+                    searchControlProvider: "yandex#search"
+                });
+        }
+    </script>
     <style>
         #map {
-            width: 100%;
-            min-height: 200px
+            min-height: 400px;
+            width: 50%;
         }
     </style>
 </head>
 <body>
-
     <header>
         <ol>
             <li>
-                <a href="./contacts.html">
+                <a
+                    href="./contacts.html">
                     [Contacts]
                 </a>
             </li>
             <li>
-                <a href="./index.html">
+                <a
+                    href="./index.html">
                     [Index]
 
                 </a>
@@ -42,11 +62,15 @@
     <p>
         Sapien eli.
     </p>
-    <img alt="We"
-         scr="https://picsum.photos/200" />
-    <h4>Address</h4>
-    <p>Dolor sit.</p>
-    <h4>Phone</h4>
+    <img
+        alt="We"
+        src="https://picsum.photos/200"/>
+    <h3>Address</h3>
+    <p>Moscow.</p>
+    <div
+        id="map">
+    </div>
+    <h3>Phone</h3>
     <ol>
         <li>
             <i>+7-001-001-01-01</i>
@@ -55,32 +79,135 @@
             <i>+7-002-002-02-02</i>
         </li>
     </ol>
-    <h4>Online Services</h4>
+    <h3>Online Services</h3>
     <ul>
         <li>
-            <a href="{example001.com}">example001</a>
-            <a href="{mailto:example001@mail.com}">example001@mail.com</a>
+            <a
+                href="{example001.com}">
+                example001
+            </a>
+            <a
+                href="{mailto:example001@mail.com}">
+                example001@mail.com
+            </a>
             : +7-001-001-01-01
         </li>
         <li>
-            <a href="{example002.com}">example002</a>
-            <a href="{mailto:example002@mail.com}">example002@mail.com</a>
+            <a
+                href="{example002.com}">
+                example002
+            </a>
+            <a
+                href="{mailto:example002@mail.com}">
+                example002@mail.com
+            </a>
             : +7-002-002-02-02
         </li>
     </ul>
-    <h4>Send us message</h4>
+    <h3>Send us message</h3>
     <form>
-        <label for="fullName"></label>
-        <input type="text" name="fullName" id="fullName" />
-        <label for="email"></label>
-        <input type="email" name="email" id="email" />
-        <button>Submit</button>
-    </form>
-    <div id="map"></div>
+        <p>
+            <label
+                for="fullName">
+                <strong>Your</strong> Full Name:
+            </label>
+            <br/>
+            <input
+                type="text"
+                name="fullName"
+                id="fullName"/>
+        </p>
+        <p>
+            <label
+                for="email">
 
-    <hr />
-    <p>
-        Все права защищены Alex2021Cyberhuman&copy;
-    </p>
+                <strong>Your</strong> Email Address:
+            </label>
+            <br/>
+            <input
+                type="email"
+                name="email"
+                id="email"/>
+        </p>
+        <p>
+            <label
+                for="message">
+                <strong>Message</strong>:
+            </label>
+            <br/>
+            <textarea name="message" id="message"></textarea>
+        </p>
+        <p>
+
+            <button>Submit</button>
+        </p>
+    </form>
+
+
+    <footer>
+        <h3>
+            Sit amet, consectetur.
+        </h3>
+        <p>
+            Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.
+        </p>
+        <hr/>
+        <ol>
+            <li>
+                <p>
+                    <strong>Consectetur adipiscing elit fusce vel.</strong>
+                    <a
+                        href="mailto:lorem001@mail.com">
+                        <b>lorem001@mail.com</b>
+                    </a>
+                    <br/>+7-001-001-01-01
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Sapien elit in malesuada semper.</strong>
+                    <a
+                        href="mailto:lorem002@mail.com">
+                        <b>lorem002@mail.com</b>
+                    </a>
+                    <br/>+7-002-002-02-02
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Mi, id sollicitudin urna fermentum.</strong>
+                    <a
+                        href="mailto:lorem003@mail.com">
+                        <b>lorem003@mail.com</b>
+                    </a>
+                    <br/>+7-003-003-03-03
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Ut fusce varius nisl ac.</strong>
+                    <a
+                        href="mailto:lorem004@mail.com">
+                        <b>lorem004@mail.com</b>
+                    </a>
+                    <br/>+7-004-004-04-04
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Ipsum gravida vel pretium tellus.</strong>
+                    <a
+                        href="mailto:lorem005@mail.com">
+                        <b>lorem005@mail.com</b>
+                    </a>
+                    <br/>+7-005-005-05-05
+                </p>
+            </li>
+        </ol>
+        <hr/>
+        <p>
+            Все права защищены Alex2021Cyberhuman&copy;
+        </p>
+    </footer>
 </body>
 </html>
