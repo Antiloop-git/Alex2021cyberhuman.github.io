@@ -12,7 +12,7 @@
 
 .paragraph::first-letter
 {
-    color: red;
+    color: #ff0000;
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase
@@ -34,9 +34,8 @@
 .heading-block
 {
     margin: 50px 0 150px 0;
-    min-width: 200px;
     text-align: left;
-    width: 50%;
+    max-width: 50%;
 }
 
 .sub-heading
@@ -144,7 +143,7 @@
     width: 35%;
 }
 
-.phone-list li::marker 
+.phone-list li::marker
 {
     content: "\260F"
 }
