@@ -1,0 +1,23 @@
+.naviagiton-menu
+{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.naviagiton-menu li
+{
+    border: 1px solid transparent;
+    display: block;
+    float: left;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.naviagiton-menu li:hover
+{
+    border-color: #1f3f68;
+    box-shadow: 0 0 100px 10px rgba(31, 63, 104, 0.2);
+}
