@@ -1,6 +1,29 @@
-.table-images
+.flex-block
 {
-    box-sizing: border-box;
-    max-width: 100%;
-    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card-3-item
+{
+    flex-grow: 4;
+    padding: 10px;
+    text-align: center;
+    width: 333px;
+}
+
+.card-2-item
+{
+    flex-grow: 6;
+    padding: 10px;
+    width: 333px;
+}
+
+.card-1-item
+{
+    flex-grow: 12;
+    padding: 10px;
+    text-align: center;
+    width: 1111px;
 }

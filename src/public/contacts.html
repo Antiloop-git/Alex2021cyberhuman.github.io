@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            [Contacts]
-        </title>
-        <meta content="text/html;charset=UTF-8"
-            http-equiv="content-type"/>
-        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6800075e-e848-4ae7-9f8f-de62880360a0"
+<head>
+    <title>
+        [Contacts]
+    </title>
+    <meta content="text/html;charset=UTF-8"
+          http-equiv="content-type" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6800075e-e848-4ae7-9f8f-de62880360a0"
             type="text/javascript"></script>
-        <script type="text/javascript">
-            var map;
-            ymaps.ready(init);
+    <script type="text/javascript">
+        var map;
+        ymaps.ready(init);
 
-            function init() {
+        function init() {
 
-                map = new ymaps.Map("map",
-                    {
-                        center: [55.76, 37.64],
-                        zoom: 10
-                    },
-                    {
-                        searchControlProvider: "yandex#search"
-                    });
-            }
-        </script>
-        <link href="./styles/main.css"
-            media="all"
-            rel="stylesheet"/>
-        <link href="./styles/menu.css"
-            media="all"
-            rel="stylesheet"/>
-        <style>
-            #map
-            {
-                height: 50%;
-                margin: 10px 10px;
-                min-height: 500px;
-                width: 100%;
-            }
-        </style>
-    </head>
+            map = new ymaps.Map("map",
+                {
+                    center: [55.76, 37.64],
+                    zoom: 10
+                },
+                {
+                    searchControlProvider: "yandex#search"
+                });
+        }
+    </script>
+    <link href="./styles/main.css"
+          media="all"
+          rel="stylesheet" />
+    <link href="./styles/menu.css"
+          media="all"
+          rel="stylesheet" />
+    <link href="./styles/table.css"
+          media="all"
+          rel="stylesheet" />
+<style>
+        #map {
+            height: 50%;
+            margin: 10px 10px;
+            min-height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
     <body>
         <header class="header naviagiton-menu">
             <div class="naviagiton-menu-item">
@@ -62,131 +64,123 @@
                     Velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst.
                 </p>
             </div>
-            <table style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th>
-                            <img alt="We"
-                                class="image-round"
-                                src="https://picsum.photos/id/200/200/200"/>
-                            <h4 class="section-title">
-                                Address
-                            </h4>
-                            <p class="paragraph">
-                                Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.
-                            </p>
-                            <h3 class="section-caption">
-                                Phone
-                            </h3>
-                            <ul class="phone-list">
+            <div class="flex-block">
+                <div class="card-2-item">
+                    <img alt="image"
+                        class="image-round"
+                        src="https://picsum.photos/id/200/200/200"/>
+                    <h4 class="section-title">
+                        Address
+                    </h4>
+                    <p class="paragraph">
+                        Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.
+                    </p>
+                    <h3 class="section-caption">
+                        Phone
+                    </h3>
+                    <ul class="phone-list">
+                        <li>
+                            <a href="tel:+71234567890">+7-123-456 78 90</a>
+                        </li>
+                        <li>
+                            <a href="tel:+71234567890">+7-123-456 78 90</a>
+                        </li>
+                    </ul>
+                    <h3 class="section-caption">
+                        Online Services
+                    </h3>
+                    <ol>
+                        <li>
+                            <ul>
                                 <li>
-                                    <a href="tel:+71234567890">+7-123-456 78 90</a>
+                                    <a href="https://example1.com"
+                                        target="_blank">
+                                        example1 site
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="tel:+71234567890">+7-123-456 78 90</a>
+                                    <a href="mailto:example1@mail.com"
+                                        target="_blank">
+                                        example1@mail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+70000000001">
+                                        +70000000001
+                                    </a> - example1.com phone number
                                 </li>
                             </ul>
-                            <h3 class="section-caption">
-                                Online Services
-                            </h3>
-                            <ol>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>
-                                    <ul>
-                                        <li>
-                                            <a href="https://example1.com"
-                                                target="_blank">
-                                                example1 site
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:example1@mail.com"
-                                                target="_blank">
-                                                example1@mail.com
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+70000000001">
-                                                +70000000001
-                                            </a> - example1.com phone number
-                                        </li>
-                                    </ul>
+                                    <a href="https://example2.com"
+                                        target="_blank">
+                                        example2 site
+                                    </a>
                                 </li>
                                 <li>
-                                    <ul>
-                                        <li>
-                                            <a href="https://example2.com"
-                                                target="_blank">
-                                                example2 site
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:example2@mail.com"
-                                                target="_blank">
-                                                example2@mail.com
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+70000000002">
-                                                +70000000002
-                                            </a>- example2.com phone number
-                                        </li>
-                                    </ul>
+                                    <a href="mailto:example2@mail.com"
+                                        target="_blank">
+                                        example2@mail.com
+                                    </a>
                                 </li>
-                            </ol>
-                        </th>
-                        <th valign="top">
-                            <h3 class="section-title">
-                                Send us message
-                            </h3>
-                            <form class="form-primary"
-                                method="get">
-                                <p class="paragraph">
-                                    <label for="fullName">
-                                        <strong>Your</strong> Full Name:
-                                    </label>
-                                    <br/>
-                                    <input class="form-item"
-                                        id="fullName"
-                                        name="fullName"
-                                        type="text"/>
-                                </p>
-                                <p class="paragraph">
-                                    <label for="email">
-                                        <strong>Your</strong> Email Address:
-                                    </label>
-                                    <br/>
-                                    <input class="form-item"
-                                        id="email"
-                                        name="email"
-                                        type="email"/>
-                                </p>
-                                <p class="paragraph">
-                                    <label for="message">
-                                        <strong>Message</strong>:
-                                    </label>
-                                    <br/>
-                                    <textarea class="form-item"
-                                        id="message">
-                                    </textarea>
-                                </p>
-                                <p class="paragraph">
-                                    <button class="form-button-primary">
-                                        Submit
-                                    </button>
-                                </p>
-                            </form>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="2">
-                            <div id="map">
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                                <li>
+                                    <a href="tel:+70000000002">
+                                        +70000000002
+                                    </a>- example2.com phone number
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="card-2-item">
+                    <h3 class="section-title">
+                        Send us message
+                    </h3>
+                    <form class="form-primary"
+                        method="get">
+                        <p class="paragraph">
+                            <label for="fullName">
+                                <strong>Your</strong> Full Name:
+                            </label>
+                            <br/>
+                            <input class="form-item"
+                                id="fullName"
+                                name="fullName"
+                                type="text"/>
+                        </p>
+                        <p class="paragraph">
+                            <label for="email">
+                                <strong>Your</strong> Email Address:
+                            </label>
+                            <br/>
+                            <input class="form-item"
+                                id="email"
+                                name="email"
+                                type="email"/>
+                        </p>
+                        <p class="paragraph">
+                            <label for="message">
+                                <strong>Message</strong>:
+                            </label>
+                            <br/>
+                            <textarea class="form-item"
+                                id="message">
+                                
+                                    
+                            </textarea>
+                        </p>
+                        <p class="paragraph">
+                            <button class="form-button-primary">
+                                Submit
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div id="map" class="card-1-item">
+                </div>
+            </div>
         </div>
         <footer class="footer">
             <div class="footer-section">
